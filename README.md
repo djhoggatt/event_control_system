@@ -22,7 +22,7 @@ This sytem assumes a strict directory and naming structure to make adding new fi
     * *include* - Contains application header files.
     * *source* - Contains application code files.
 * **drivers** - Contains files associated with the MCU.
-    * *~MCU~* - MCU that this device can run on.
+    * *MCU* - Processor that this device can run on.
         * *include* - Contains MCU-level header files.
         * *source* - Contains MCU-level code files.
         * *startup* - Contains startup assembly code and linker files.
@@ -33,9 +33,9 @@ This sytem assumes a strict directory and naming structure to make adding new fi
     * *Inc* - Contains OSAL header files.
     * *Src* - Contains OSAL code files.
 * **platform** - Contains files associated with the platform setup.
-    * *~PLATFORM~* - Platform (hardware) that this device runs on.
+    * *PLATFORM* - Platform (hardware) that this device runs on.
 * **rtos** - Contains files associated with the operating system.
-    * *~RTOS~* - Operating system that this device utilizes.
+    * *RTOS* - Operating system that this device utilizes.
 * **script** - Contains various scripts used by the system.
 * **templates** - Contains template files.
 * **test** - Contains files associated with testing.
