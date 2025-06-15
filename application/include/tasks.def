@@ -1,0 +1,10 @@
+// Definitions for tasks
+// Format: DEF(TASK_NAME, PRIORITY, DEPTH)
+// TASK_NAME - Name of the task used to create the ID.
+// PRIORITY - Priority of the task.
+// DEPTH - Stack depth of the task.
+
+DEF(open, Lowest, 512) // Must be first, as it assumes it's signal position
+                       // is 1 when opening.
+
+DEF(control, Medium, 1024)

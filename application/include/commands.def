@@ -1,0 +1,24 @@
+// Definitions for CLI commands
+// Format: DEF(COMMAND_STR, FUNC_NAME, DESCRIPTION)
+// COMMAND_STR - Command string (this is used to execute command).
+//
+// FUNC_NAME - Name of the function associated with the command
+//
+// DESCRIPTION - Description of the command.
+
+DEF("help", help_func, "Prints out the list of available commands")
+DEF("ctrl-on", control_on, "Enables the given control")
+DEF("ctrl-off", control_off, "Disables the given control")
+DEF("ctrl-list", control_list, "Lists avilable controls")
+DEF("io-get", get_input, "Gets the value of the given input.")
+DEF("io-set", set_output, "Sets the value of the given output.")
+DEF("io-print", io_print, "Turns on printing I/O data for the given I/O")
+DEF("io-quiet", io_quiet, "Turns off printing I/O data for the given I/O")
+DEF("io-list", io_list, "Lists all I/O and their associated IDs.")
+DEF("memory", mem_list, "Lists current heap & stack usage. Use 'dump' to dump stacks.")
+DEF("setting-set", setting_set, "Sets the given setting.")
+DEF("setting-get", setting_get, "Gets the value of the given setting.")
+DEF("flash-write", flash_write, "Writes the given value into flash at the given address.")
+DEF("flash-read", flash_read, "Reads the value from flash at the given address.")
+DEF("flash-erase", flash_erase, "Erased the flash sector at the given address.")
+DEF("reboot", reboot, "Reboots the system.")

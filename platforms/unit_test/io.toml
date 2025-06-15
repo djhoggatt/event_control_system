@@ -1,0 +1,18 @@
+# IO List
+
+[INPUT_1]
+type = "ADC"
+adc_port = "ADC_1"
+
+
+[INPUT_2]
+type = "ADC"
+adc_port = "ADC_2"
+
+
+[UART_CONSOLE]
+type = "UART"
+uart_port = "UART_CLI"
+
+
+#End of File

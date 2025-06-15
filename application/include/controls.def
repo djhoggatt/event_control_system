@@ -1,0 +1,24 @@
+// Definitions for controls
+// Format: DEF(CONTROL_NAME, CONTROL_STR, ENABLED)
+//
+// CONTROL_NAME - Name of the control. This will be the name of the Control's
+// child class used to access that specific control.
+//
+// CONTROL_STR - This is a string that's used for accessing the control. This is
+// mostly different from the name because I favor lower case for CLI
+// interactions. This must be less than MAX_NAME_LEN.
+//
+// ENABLED - true/false value indicating if this control is currently enabled in
+// the system.
+//
+// Note: The order here determines priority. Controls at the top of the list
+// will be the first to handle events, and can block subsequent controls from
+// handling an event.
+
+#if defined(TESTING)
+DEF(TestControl1, "test-control-1", true)
+DEF(TestControl2, "test-control-2", true)
+#endif
+
+DEF(EvtPrint, "event-print", false) // Must be highest priority
+DEF(CLI, "cli", true)

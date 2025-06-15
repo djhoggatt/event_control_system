@@ -1,0 +1,10 @@
+// Undefines all platform-specific DEF macros.
+
+#undef DEF_PLAT
+#undef DEF_ADC
+#undef DEF_UART
+#undef DEF_GPIO
+#undef DEF_CAN
+#undef DEF_FLASH
+#undef DEF_SPI
+#undef DEF_LIN

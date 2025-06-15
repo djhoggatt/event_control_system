@@ -1,0 +1,26 @@
+# IO List
+# You can specify child objects (e.g. IO classes contained within another IO class) by using a 
+# period in the table entry, e.g. [OBJ.OBJ]. This can recurse as much as needed to specify all
+# IO, e.g. [OBJ.OBJ.OBJ].
+#
+# Generated IDs are always upper case. Generated instances are always lower case. So if you have
+# A child object, you will need to specify it in upper-case, even if the object name is lowercase.
+# E.g. class Obj { IO adc }, will be specified as [OBJ.ADC]
+#
+# Top-level parent objects must always have a type specified. Any assignment that ends in _port
+# will assign to a VirtualPort enumeration (which should be defined in the associated header
+# file). All other assignments can be anything that you want, they will be interpreted directly
+# into code.
+
+
+[INPUT_1]
+type = "ADC"
+adc_port = "ADC_1"
+
+
+[UART_CONSOLE]
+type = "UART"
+uart_port = "UART_CLI"
+
+
+#End of File

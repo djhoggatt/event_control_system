@@ -1,0 +1,13 @@
+# Builds List
+
+[unitest]
+os = "FreeRTOS"
+driver = "versatilepb"
+platform = "unit_test"
+version = "0.0.0"
+
+[versatilepb]
+os = "FreeRTOS"
+driver = "versatilepb"
+platform = "versatilepb_qemu"
+version = "0.0.0"

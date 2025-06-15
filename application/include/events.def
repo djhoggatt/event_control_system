@@ -1,0 +1,12 @@
+// Definitions for events
+// Format: DEF(TASK_NAME, EVENT_NAME)
+//
+// TASK_NAME - Name of the task associated with the event.
+//
+// EVENT_NAME - Name of the event.
+
+DEF(control, TestEvent) // Used for unit testing.
+DEF(control, ADCInput)  // Received ADC input.
+DEF(control, UARTInput) // Received UART input.
+DEF(control, UpdateCLIState)
+DEF(control, CLIOutput)

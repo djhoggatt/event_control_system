@@ -1,0 +1,11 @@
+option('platform', type: 'string', description: 'Platform')
+option('driver', type: 'string', description: 'MCU-level Drivers')
+option('rtos', type: 'string', description: 'Operating system')
+option('version', type: 'string', description: 'Application Version')
+option('test', type: 'boolean', value: false, description: 'Indicates a unit test build')
+option(
+    'save-temps',
+    type: 'boolean',
+    value: false,
+    description: 'Save temporary files, e.g. preprocessor output and dissassembly',
+)

@@ -1,0 +1,34 @@
+// Defines all platform-specific DEF macros, so that we only have to define the
+// one we care about when using platform.def
+
+#if !defined(DEF_PLAT)
+    #define DEF_PLAT(PLAT)
+#endif
+
+#if !defined(DEF_ADC)
+    #define DEF_ADC(PLAT, VIRT_PIN, PHY_PIN, PHY_PORT, ACTIVE_STATE, HANDLE)
+#endif
+
+#if !defined(DEF_UART)
+    #define DEF_UART(PLAT, VIRT_PIN, PHY_PIN, PHY_PORT, ACTIVE_STATE, HANDLE)
+#endif
+
+#if !defined(DEF_GPIO)
+    #define DEF_GPIO(PLAT, VIRT_PIN, PHY_PIN, PHY_PORT, ACTIVE_STATE, HANDLE)
+#endif
+
+#if !defined(DEF_CAN)
+    #define DEF_CAN(PLAT, VIRT_PIN, PHY_PIN, PHY_PORT, ACTIVE_STATE, HANDLE)
+#endif
+
+#if !defined(DEF_FLASH)
+    #define DEF_FLASH(PLAT, ADDR)
+#endif
+
+#if !defined(DEF_SPI)
+    #define DEF_SPI(PLAT, VIRT_PIN, HANDLE, CONFIG)
+#endif
+
+#if !defined(DEF_LIN)
+    #define DEF_LIN(PLAT, VIRT_PIN, HANDLE)
+#endif

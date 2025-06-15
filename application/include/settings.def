@@ -1,0 +1,25 @@
+// Definitions for settings
+// Format: DEF(NAME, MODULE, TYPE, PERMISSION, DEFAULT)
+// NAME - Name of the setting
+// MODULE - Associated module
+// TYPE - Type of the setting. Controls input and output formatting, must be in
+// Type enumeration.
+// DEFAULT - Default value
+//
+// NOTE - All settings must be grouped under their respective module
+
+#if defined(TESTING)
+DEF(TestInt, settings_test, INT, SET_GET, -1)
+DEF(TestUInt, settings_test, UINT, SET_GET, 3)
+DEF(TestHex, settings_test, HEX, SET_GET, 0x5)
+DEF(TestStr, settings_test, STR, SET_GET, "Test")
+DEF(TestFloat, settings_test, FLOAT, SET_GET, "6.9")
+DEF(InvalidType, settings_test, NumTypes, SET_GET, "Test")
+DEF(TestPermSet, settings_test, STR, SET, "Test")
+DEF(TestPermGet, settings_test, STR, GET, "Test")
+DEF(TestPermSetGet, settings_test, STR, SET_GET, "Test")
+#endif
+
+DEF(VersionString, version, STR, GET, "0.0.0-00000000")
+
+DEF(ErrorHandleType, error, INT, SET_GET, error::HandlerType::Reboot)

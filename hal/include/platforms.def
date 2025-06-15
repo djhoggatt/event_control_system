@@ -1,0 +1,17 @@
+// List of supported platforms, and their virtual to physical pin definitions.
+
+#include "platforms_header.def"
+
+#if defined(PLATFORM_STM32G474)
+    #include "platform_stm32_v1.def"
+#endif
+
+#if defined(PLATFORM_S32K311)
+    #include "platform_s32k3_v1.def"
+#endif
+
+#if defined(PLATFORM_VERSATILEPB_QEMU)
+    #include "platform_versatilepb_qemu.def"
+#endif
+
+#include "platforms_footer.def"

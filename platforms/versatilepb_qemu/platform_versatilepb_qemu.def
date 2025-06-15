@@ -1,0 +1,19 @@
+// Pin definitions for the platform
+// Format: DEF_TYPE(VIRT_PIN, PHY_PIN, PHY_PORT, ACTIVE_STATE, HANDLE)
+// PLAT - Platform name.
+//
+// TYPE - Type of the pin. This must match the type of the input/output.
+//
+// VIRT_PIN - Name of the pin used by the higher level application. This must
+// match the name in the associated input/output header file.
+//
+// PHY_PIN - Physical pin definition.
+//
+// PHY_PORT - Physical port associated with the pin.
+//
+// ACTIVE_STATE - 1 if active high, 0 if active low, -1 if unused.
+//
+// HANDLE - Handle of the associated IO. Some HAL implementations use handles
+// instead of physical pin associations. Leave 0 if unused.
+
+DEF_PLAT(versatilepb_qemu)
